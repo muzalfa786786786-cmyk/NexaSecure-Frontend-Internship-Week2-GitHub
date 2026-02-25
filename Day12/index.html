@@ -1,1 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f4f4;
+      transition: 0.3s;
+    }
+
+    .calculator {
+      width: 340px;
+      padding: 20px;
+      border-radius: 20px;
+      background: #3aeff8;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .dark {
+      background: #212020;
+      color: white;
+    }
+
+    .dark body {
+      background: #1b1a1a;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .toggle {
+      cursor: pointer;
+      padding: 6px 10px;
+      border-radius: 50%;
+      border: none;
+      font-size: 16px;
+    }
+
+    .display {
+      width: 100%;
+      height: 60px;
+      margin-bottom: 15px;
+      font-size: 28px;
+      text-align: right;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    button {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .operator { background: #58595a; color: white; }
+    .equal { background: #28a745; color: white; }
+    .clear { background: #dc3545; color: white; }
+    .func { background: #8e44ad; color: white; }
+  </style>
+</head>
+<body>
+
+<div class="calculator" id="calculator">
+  <div class="top">
+    <h2>Calculator</h2>
+    <button class="toggle" onclick="toggleTheme()">🌙</button>
+  </div>
+
+  <input type="text" id="display" class="display" disabled>
+
+  <div class="buttons">
+    <button class="func" onclick="appendFunction('Math.sin(')">sin</button>
+    <button class="func" onclick="appendFunction('Math.cos(')">cos</button>
+    <button class="func" onclick="appendFunction('Math.tan(')">tan</button>
+    <button class="func" onclick="appendFunction('Math.sqrt(')">√</button>
+
+    <button class="func" onclick="appendFunction('Math.log10(')">log</button>
+    <button class="func" onclick="appendValue('Math.PI')">π</button>
+    <button class="func" onclick="appendValue('**')">^</button>
+    <button class="clear" onclick="clearDisplay()">C</button>
+
+    <button onclick="appendValue('7')">7</button>
+    <button onclick="appendValue('8')">8</button>
+    <button onclick="appendValue('9')">9</button>
+    <button class="operator" onclick="appendValue('/')">÷</button>
+
+    <button onclick="appendValue('4')">4</button>
+    <button onclick="appendValue('5')">5</button>
+    <button onclick="appendValue('6')">6</button>
+    <button class="operator" onclick="appendValue('*')">×</button>
+
+    <button onclick="appendValue('1')">1</button>
+    <button onclick="appendValue('2')">2</button>
+    <button onclick="appendValue('3')">3</button>
+    <button class="operator" onclick="appendValue('-')">−</button>
+
+    <button onclick="appendValue('0')">0</button>
+    <button onclick="appendValue('.')">.</button>
+    <button onclick="appendValue('(')">(</button>
+    <button onclick="appendValue(')')">)</button>
+
+    <button class="operator" onclick="appendValue('+')">+</button>
+    <button class="equal" onclick="calculate()" style="grid-column: span 3">=</button>
+  </div>
+</div>
+
+<script>
+  const display = document.getElementById("display");
+
+  function appendValue(value) {
+    display.value += value;
+  }
+
+  function appendFunction(func) {
+    display.value += func;
+  }
+
+  function clearDisplay() {
+    display.value = "";
+  }
+
+  function calculate() {
+    try {
+      if (display.value.trim() === "") {
+        throw "Empty Input";
+      }
+
+      let result = eval(display.value);
+
+      if (!isFinite(result)) {
+        throw "Math Error";
+      }
+
+      display.value = result;
+
+    } catch (error) {
+      display.value = "Error";
+    }
+  }
+
+  function toggleTheme() {
+    document.body.classList.toggle("dark");
+    document.getElementById("calculator").classList.toggle("dark");
+  }
+
+  // Keyboard Support
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") calculate();
+    else if (event.key === "Backspace")
+      display.value = display.value.slice(0, -1);
+    else if (!isNaN(event.key) || "+-*/().".includes(event.key))
+      display.value += event.key;
+  });
+</script>
+
+</body>
+</html>
