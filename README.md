@@ -1,12 +1,13 @@
 # 🚀 Frontend Development Internship – Week 2
-
 NexaSecure Tech
 
 This repository contains all tasks and projects completed during Week 2 of my 1-Month Frontend Development Internship at NexaSecure Tech.
 
 The objective of this week was to learn JavaScript fundamentals and apply DOM manipulation techniques to build interactive and dynamic web applications.
 
-# 📂 Week 2 Folder Structure
+------------------------------------------------------------
+
+## 📂 Week 2 Folder Structure
 
 Week2/
 │
@@ -18,71 +19,66 @@ Week2/
 ├── Day13 – To-Do App with Local Storage (Part 1)
 └── Day14 – To-Do App with Local Storage (Part 2 – Final)
 
-# 📚 What I Learned in Week 2
+------------------------------------------------------------
 
-✅ JavaScript Variables & Data Types
-✅ Functions & Conditional Statements
-✅ Loops & Debugging using console.log()
-✅ DOM Element Selection & Manipulation
-✅ Event Handling in JavaScript
-✅ Building Interactive Web Applications
-✅ Calculator Application Development
-✅ Advanced Mathematical Operations
-✅ Error Handling in JavaScript
-✅ To-Do List Application
-✅ Implementing Local Storage
-✅ UI Enhancement & Dynamic Updates
+## 📚 What I Learned in Week 2
 
-# 🛠️ Technologies Used
+✔ JavaScript Variables & Data Types
+✔ Functions & Conditional Statements
+✔ Loops & Debugging using console.log()
+✔ DOM Element Selection & Manipulation
+✔ Event Handling in JavaScript
+✔ Building Interactive Web Applications
+✔ Calculator Application Development
+✔ Advanced Mathematical Operations
+✔ Error Handling in JavaScript
+✔ To-Do List Application
+✔ Implementing Local Storage
+✔ UI Enhancement & Dynamic Updates
 
-HTML5
+------------------------------------------------------------
 
-CSS3
+## 🛠️ Technologies Used
 
-JavaScript (ES6)
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- DOM Manipulation
+- Local Storage
+- Git & GitHub
 
-DOM Manipulation
+------------------------------------------------------------
 
-Local Storage
+## 🎯 Major Projects Completed
 
-Git & GitHub
+Calculator Application (Day 11 & 12)
+- Basic Arithmetic Operations
+- Advanced Functions
+- Error Handling
+- Responsive UI Design
 
-# 🎯 Major Projects Completed
-🔹 Calculator Application (Day 11 & 12)
+To-Do App with Local Storage (Day 13 & 14)
+- Add & Delete Tasks
+- Dynamic Task Updates
+- Local Storage Integration
+- Persistent Task Saving
+- Responsive UI Design
 
-A fully functional calculator developed using HTML, CSS, and JavaScript including:
+------------------------------------------------------------
 
-Basic Arithmetic Operations
-
-Advanced Functions (sin, cos, tan, log, sqrt, etc.)
-
-Error Handling
-
-Responsive UI Design
-
-🔹 To-Do App with Local Storage (Day 13 & 14)
-
-A complete task management application including:
-
-Add & Delete Tasks
-
-Dynamic Task Updates
-
-Local Storage Integration
-
-Persistent Task Saving
-
-Responsive UI Design
-
-#  🏢 Internship Details
+## 🏢 Internship Details
 
 Company: NexaSecure Tech
 Program: 1-Month Frontend Development Internship
 Week: Week 2
 Duration: 7 Days
 
-# 👩‍💻 Author
+------------------------------------------------------------
+
+## 👩‍💻 Author
 
 Muzalfa Bibi
 
-# ⭐ Thank you for reviewing my Week 2 Internship Progress!
+------------------------------------------------------------
+
+⭐ Thank you for reviewing my Week 2 Internship Progress!
