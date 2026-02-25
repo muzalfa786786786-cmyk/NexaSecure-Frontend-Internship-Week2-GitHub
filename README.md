@@ -9,8 +9,6 @@ The objective of this week was to learn JavaScript fundamentals and apply DOM ma
 
 ## 📂 Week 2 Folder Structure
 
-## 📂 Week 2 Folder Structure
-
 ```
 Week2/
 │
