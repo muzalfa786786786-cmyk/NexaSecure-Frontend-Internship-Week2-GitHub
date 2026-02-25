@@ -1,0 +1,28 @@
+body{
+    margin:0;
+    padding:0;
+    background:#f0f2f5;
+    font-family:Arial;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0px 0px 15px rgba(0,0,0,0.2);
+}
+
+button{
+    padding:10px 20px;
+    margin:10px;
+    border:none;
+    background:#ba09e1;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
