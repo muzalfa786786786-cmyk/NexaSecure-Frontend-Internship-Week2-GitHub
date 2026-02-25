@@ -9,6 +9,9 @@ The objective of this week was to learn JavaScript fundamentals and apply DOM ma
 
 ## 📂 Week 2 Folder Structure
 
+## 📂 Week 2 Folder Structure
+
+```
 Week2/
 │
 ├── Day8 – JavaScript Basics
@@ -18,11 +21,11 @@ Week2/
 ├── Day12 – Calculator Application (Part 2)
 ├── Day13 – To-Do App with Local Storage (Part 1)
 └── Day14 – To-Do App with Local Storage (Part 2 – Final)
-
+```
 ------------------------------------------------------------
 
 ## 📚 What I Learned in Week 2
-
+```
 ✔ JavaScript Variables & Data Types
 ✔ Functions & Conditional Statements
 ✔ Loops & Debugging using console.log()
@@ -35,7 +38,7 @@ Week2/
 ✔ To-Do List Application
 ✔ Implementing Local Storage
 ✔ UI Enhancement & Dynamic Updates
-
+```
 ------------------------------------------------------------
 
 ## 🛠️ Technologies Used
